@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        header {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        nav {
+            width: 60%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 1.5em;
+
+        }
+
+        .heading2 p {
+            padding: 0 10px;
+        }
+
+        .head_img {
+            width: 60%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .div_img {
+            margin: auto;
+            display: inline-block;
+            justify-content: center;
+        }
+
+        .div_img>img {
+            border-radius: 80px;
+        }
+
+        .back_img {
+            background-image: url(https://p2.piqsels.com/preview/745/724/30/bridge-nature-road-journey.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+
+        }
+
+        .icon_div {
+            display: flex;
+            justify-content: center;
+            margin: -25px auto;
+            color: white;
+
+        }
+
+        .inst {
+            margin: 0px 15px;
+            background-color: gray;
+            color: white;
+        }
+
+        .hd1,
+        .hd2,
+        .hd3,
+        .hd4,
+        .hd5 {
+            display: inline-block;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .middle {
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            padding: 0px 10px 10px 10px;
+        }
+
+        .mid1 {
+            font-size: 30px;
+            font-weight: bolder;
+            line-height: 1px;
+        }
+
+        .mid2 {
+            font-size: 20px;
+            line-height: 1px;
+        }
+
+        button {
+            background-color: green;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .img {
+            margin: 10px 10px 10px 0em;
+        }
+
+        .main {
+            display: flex;
+            border: 1px solid white;
+            width: 80%;
+            margin: auto;
+            margin-top: 5%;
+            padding: 10px 10px 10px 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .main1 {
+            line-height: 5px;
+        }
+
+        .main2 {
+            margin-left: 5%;
+        }
+
+        .skills {
+            border: 1px solid white;
+            width: 80%;
+            margin: auto;
+            padding: 10px 10px 10px 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .h2 {
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        .work {
+            display: flex;
+            border: 1px solid white;
+            margin: auto;
+            width: 81%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .he2 {
+            text-align: center;
+        }
+
+        .work1 {
+            background-color: green;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 20%;
+            color: white;
+        }
+
+        .work2 {
+            margin-left: 20px;
+            flex-basis: 80%;
+        }
+
+        .hed {
+            text-align: center;
+        }
+
+        .edu {
+            display: flex;
+            border: 1px solid white;
+            margin: auto;
+            width: 81%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-bottom: 30px;
+        }
+
+        .edu1 {
+            background-color: green;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 20%;
+            color: white;
+        }
+
+        .edu2 {
+            margin-left: 20px;
+            padding-top: 10px;
+            flex-basis: 80%;
+            font-size: 18px;
+        }
+
+        .contect {
+            display: flex;
+
+        }
+
+        .main_map {
+            background-image: url(https://www.google.com/maps/d/thumbnail?mid=1So1q8UX5fQoQBcXLdjDnjIeZ1ck&hl=en_US);
+            background-size: 30%;
+            height: 600px;
+            position: relative;
+        }
+
+        .map {
+            border: 1px solid black;
+            /* margin: auto; */
+            width: 38%;
+            padding: 15px;
+            height: 450px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-top: 50px;
+            background-color: white;
+            display: inline-block;
+            margin-left: 500px;
+            position: absolute;
+        }
+
+        .contect1 {
+            line-height: 40px;
+        }
+
+        .contect2 {
+            margin-left: 70px;
+            line-height: 30px;
+        }
+
+        input {
+            border-radius: 10px 10px 10px 10px;
+            padding: 5px 70px 5px 0px;
+            margin: 15px 10px 15px 0px;
+        }
+
+        label {
+            font-weight: bolder;
+        }
+
+        .c1 {
+            font-weight: bolder;
+        }
+
+        textarea {
+            border-width: 0px 0px 1px 0px;
+            padding: 10px 30px 10px 10px;
+        }
+
+        .hc2 {
+            text-align: center;
+            margin: auto;
+        }
+        .Name{
+            font-size: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .cv{
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .link{
+            text-decoration: none;
+            color: black;
+            line-height: 30px;
+        }
+        .ed{
+            text-align: center;
+            padding-top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back_img">
+        <header>
+            <nav>
+                <div class="heading">
+                    <p>CREATIVE CV</p>
+                </div>
+                <div class="heading2">
+                    <p class="hd1"><a href="#main">ABOUT</a></p>
+                    <P class="hd2"> <a href="#skills">SKILLS</a></P>
+                    <P class="hd4"> <a href="#work">EXPRIENCE</a></P>
+                    <P class="hd5"> <a href="#main_map">CONTECT</a></P>
+                </div>
+            </nav>
+            <div class="head_img">
+                <div class="div_img"><img src="photo.jpeg" alt="photo" height="150px" width="150px"></div>
+            </div>
+            <div class="middle">
+                <p class="mid1">Bhawana Jangid</p>
+                <p class="mid2">Fresher</p>
+                <button><a href="#main_map">Hire Me</a></button>
+                <button><a href="resum.html"> Download CV</a></button>
+            </div>
+        </header>
+    </div>
+    <div class="icon_div">
+        <div class="inst"><span><img src="instagram.svg" alt="" width="50px" height="50px"></span></div>
+        <div class="inst"><span><img src="twitter.svg" alt="" width="50px" height="50px"></span></div>
+        <div class="inst"><span><img src="linkedin.svg" alt="" width="50px" height="50px"></span></div>
+        <div class="inst"><span><img src="facebook.svg" alt="" width="50px" height="50px"></span></div>
+    </div>
+    <div class="main" id="main">
+        <div class="main1">
+            <h2>About</h2>
+            <p>Hello, I am Bhawana Jangid.I am currently pursuing Advanced Diploma in IT </p>
+            <p> from NSTI,Jodhpur. I know HTML, CSS language.</p>
+        </div>
+        <div class="main2">
+            <h2>Basic Information</h2>
+            <p>AGE: 21</p>
+            <P>EMAIL: jangidbhawana130@gmail.com</P>
+            <P>PHONE: 7850033292</P>
+            <P>ADDRESS: 55, Babu Rajendra Marg, Masuriya, Jodhpur</P>
+            <P>LANGUAGE: Hindi, English and Other local </P>
+        </div>
+    </div>
+    <h2 class="h2">Professional Skills</h2>
+    <div class="skills" id="skills">
+        <p>HTML</p>
+        <progress id="file" max="100" value="20"> 70% </progress>
+        <P>CSS</P>
+        <progress id="file" max="100" value="20"> 70% </progress>
+        <P>JAVASCRIPT</P>
+        <progress id="file" max="100" value="20"> 70% </progress>
+    </div>
+    <h2 class="he2">Work Exprience</h2>
+    <div class="work" id="work">
+        <div class="work1">
+            <p>March-2022 to August-2022</p>
+            <p>NSTI Jodhpur</p>
+        </div>
+        <div class="work2">
+            <p>Data Entry Opreator</p>
+            <p>Work for excel, online protel, admission and Other</p>
+        </div>
+    </div>
+    <h2 class="hed">Education</h2>
+    <div class="edu">
+        <div class="edu1">
+            <p>September-2022 to present</p>
+            <p>NSTI Jodhpur</p>
+        </div>
+        <div class="edu2">
+            <p>Advance Diploma in IT Networking</p>
+            <p>This Course has been developed with a clearly defined objective will help the students the most to enhance the employability and create industry pathways for students by helping them to start their own enterprise in cloud maintenance or computer hardware maintenance. Alternatively, students can apply for jobs in Industry as system technician, cloud developer, web designer and trainers (future skills).</p>
+        </div>
+    </div>
+    <div class="edu">
+        <div class="edu1">
+            <p>2019 to 2022</p>
+            <p>Bachelor's Dgree</p>
+        </div>
+        <div class="edu2">
+           <p>JNVU, Univercity</p>
+           <p>Completed my Bachelor of B.com from JNVU, Univercity in 2022 and have
+            scored 56%. </p>
+        </div>
+    </div>
+    <div class="edu">
+        <div class="edu1">
+            <p>2019</p>
+            <p>High school</p>
+        </div>  
+        <div class="edu2">
+            <p>Commerce</p> 
+            <p>Completed my high school in 2019 from Balika Aadarsh School , Jodhpur (Rajasthan) with Commerce and Computer as the complusory subjects.</p>
+        </div>
+        
+    </div>
+    <div class="edu">
+        <div class="edu1">
+            <div class="ed"><p>2022</p>
+            <p>IBM Skill Build</p></div>
+        </div>
+        <div class="edu2">
+           <p>Certificats</p> 
+            <ul>
+                <li><a class="link" href="https://skills.yourlearning.ibm.com/certificate/URL-_CRGPGIC8AI" target="_blank" rel="noopener noreferrer">6 Ways to Find What You Want on the Internet</a></li>
+                <li><a class="link" href="http://https://skills.yourlearning.ibm.com/certificate/URL-2891526B89E9" target="_blank" rel="noopener noreferrer"> 10 Tips That Can Make Anyone A Microsoft Word Expert</a></li>
+                <li><a class="link" href="https://skills.yourlearning.ibm.com/certificate/URL-JU9AOC2MLYO" target="_blank" rel="noopener noreferrer">Being a Good Digital Citizen</a></li>
+                <li> <a class="link" href="https://skills.yourlearning.ibm.com/certificate/URL-AE1D6B2DE978" target="_blank" rel="noopener noreferrer">G Suite Training (gmail, Chrome, Google Classroom, Hangouts, etc.)</a></li>
+                <li><a class="link" href="https://skills.yourlearning.ibm.com/certificate/URL-ZL6446SHQ08" target="_blank" rel="noopener noreferrer">How to Create Strong Passwords</a></li>
+                <li> <a class="link" href="https://skills.yourlearning.ibm.com/certificate/URL-DBDACBE12A39" target="_blank" rel="noopener noreferrer"> Improving Your Computer Literacy  Everything You Need to Know</a></li>
+                <li><a class="link" href="https://skills.yourlearning.ibm.com/certificate/URL-BFE7521489DA" target="_blank" rel="noopener noreferrer">Information Literacy Skills</a></li>
+                <li><a class="link" href="http://skills.yourlearning.ibm.com/certificate/URL-A281274C16FD" target="_blank" rel="noopener noreferrer">Master PowerPoint 15 Essential Tips</a></li>
+                <li><a class="link" href="http://skills.yourlearning.ibm.com/certificate/URL-PLLV2O6UFTU" target="_blank" rel="noopener noreferrer">Microsoft 365 Training (Word, PowerPoint, Excel, etc.)</a></li>
+                <li><a class="link" href="http:////skills.yourlearning.ibm.com/certificate/URL-E5B7A4F76B9B" target="_blank" rel="noopener noreferrer"> Red Hat Enterprise Linux Technical Overview</a></li>
+                <li><a class="link" href="" target="_blank" rel="noopener noreferrer"></a> The Internet  How Search Works</a></li>
+                <li><a class="link" href="https://skills.yourlearning.ibm.com/certificate/URL-1285CD8772E6" target="_blank" rel="noopener noreferrer">What does it mean to be digitally literate</a></li>
+                <li> <a class="link" href="https://skills.yourlearning.ibm.com/certificate/URL-7DZR5UAAM0E" target="_blank" rel="noopener noreferrer"> What Is IoT  What Is IoT Technology And How It Works  Internet Of Things Explained  Simplilearn</a></li>
+                <li><a class="link" href="http://skills.yourlearning.ibm.com/certificate/URL-4B9F8C797BBC" target="_blank" rel="noopener noreferrer">What is open source</a></li>
+                <li><a class="link" href="https://skills.yourlearning.ibm.com/certificate/URL-LVV_93MBFSU" target="_blank" rel="noopener noreferrer">The Internet: How Search Works </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main_map" id="main_map">
+        <div class="map">
+            <div class="hc2">
+                <h2>Contect Me</h2>
+            </div>
+            <div class="contect">
+                <div class="contect1">
+                    <div><label for="">Feel free to contect me</label></div>
+                    <div><input type="text" placeholder="Name"></div>
+                    <div><input type="text" placeholder="subject"></div>
+                    <div><input type="text" placeholder="E-mail"></div>
+                    <div><textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea></div>
+                    <div><button type="submit">Send</button></div>
+                </div>
+                <div class="contect2">
+                    <div class="c1">Address</div>
+
+                    <div>55, Babu Rajendra Marg, Masuriya, Jodhpur</div>
+                    <div class="c1">Phone</div>
+                    <div>7850033292</div>
+                    <div class="c1">Email</div>
+                    <div>jangidbhawana130@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Name">Bhawana Jangid</div>
+    <div class="cv">
+        @Creativ CV All right reserved.
+    </div>
+    
+</body>
+
+</html>
